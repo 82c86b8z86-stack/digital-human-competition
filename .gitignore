@@ -1,0 +1,30 @@
+# ========== 大模型权重：全排除，README 里说明下载方式 ==========
+participant/model/
+participant/model_7b/
+model_merged_smoke/
+model_merged/
+model_backup_base/
+**/.cache/huggingface/
+
+# ========== 训练中间产物：排除 optimizer/scheduler 等中间态 ==========
+checkpoints/**/checkpoint-*/
+# 注: checkpoints/smoke/lora_adapter/ 是最终 LoRA adapter，会在 commit 里选择性 add
+
+# ========== 临时/调试脚本 ==========
+_verify.py
+_check_drop.py
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# ========== 官方数据 & 测试输出 ==========
+data/
+官方数据/
+output/
+output_smoke/
+logs/
+
+# ========== 系统 ==========
+.DS_Store
+Thumbs.db

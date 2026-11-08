@@ -1,0 +1,12 @@
+# 不要打进提交镜像的东西
+**/checkpoints/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.log
+**/*.tmp
+**/output_smoke/
+**/model_merged_smoke/
+**/官方数据/
+!官方数据/数字人综合情感陪伴对话模型/test_inference_data.jsonl
+docs/
